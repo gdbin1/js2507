@@ -1,33 +1,124 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>java과제</title>
+    <style>
+        table {
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            font-weight: bold;
+        }
+
+        .round {
+            border-radius: 150px;
+            position: absolute;
+            left: 400px;
+            top: 130px;
+            box-shadow: 5px 5px 5px;
+        }
+        body{background-image: url("../image/hotel_2.avif");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover; 
+        }
+    </style>
 </head>
+
 <body>
-    
+
     <header>
         <h1 style="text-align: center;">호텔 예약</h1>
     </header>
-     <h3>목차</h3>
-        <ul style="list-style-type:upper-roman;">
-            <li>호텔 소개</li>
-            <dd><p>저희 호텔은 값을 지불하는 소비자에게 정당한 대가를 제공하기 위해, 적당한 가격에 제공하며,<br>
-            항상 깔끔한 청결을 유지합니다. <br>또한 투숙객의 요구 사항, 불편 사항이 있을경우 언제든 카운터에 연락해주시면 조치해드립니다.</p></dd>
-            <li>패키지 소개</li>
-                <dd><p>저희 호텔을 이용해 주시는 분들 중 패키지를 이용하시면 더 저렴하게 이용 가능합니다.</p></dd>
-                <ul>
-                    <li><p><b>숙박만 이용시 : 150000</b></p></li>
-                    <li><p id="p1"></p></li>
-                    <li><p id="p2"></p></li>
-                    <li></li>
-                </ul>
-            <li>시설 소개</li>
-            <li>등급별 혜택</li>
+    <h3>목차</h3>
+    <ul style="list-style-type:upper-roman;">
+        <li>호텔 소개</li>
+        <dd>
+            <p>저희 호텔은 값을 지불하는 소비자에게 정당한 대가를 제공하기 위해, 적당한 가격에 제공하며,<br>
+                항상 깔끔한 청결을 유지합니다. <br>또한 투숙객의 요구 사항, 불편 사항이 있을경우 언제든 카운터에 연락해주시면 조치해드립니다.</p>
+        </dd>
+        <br>
+        <hr><br>
+        <li>패키지 소개</li>
+        <dd>
+            <p style="font-size: 130%;">*저희 호텔을 이용해 주시는 분들 중 패키지를 이용하시면 더 저렴하게 이용 가능합니다.*</p>
+        </dd>
+       <img class="round" width="150px;" height="150px;" src="../image/hotel_1.avif" alt="hotel" style="top:450px; left: 500px;">
+        <img class="round" width="150px;" height="150px;" src="../image/waterpark.avif" alt="waterpark" style="top:450px; left: 700px;">
+         <img class="round" width="150px;" height="150px;" src="../image/garden.avif" alt="garden" style="top:450px; left: 900px;">
+           
+        <ul>
+            <li>
+                <p><b>숙박만 이용시 : 150000</b></p>
+            </li>
+            <li>
+                <p id="p1"></p>
+            </li>
+            <li>
+                <p id="p2"></p>
+            </li>
+            <li>
+                <p id="p3"></p>
+            </li>
         </ul>
+        <br>
+        <hr><br>
+        <li>시설 소개</li>
+        <ul>
+            <li>저희 호텔은 최상급 컨디션의 객실과, 고급 인테리어, 최고의 청결도를 항상 유지합니다.</li><br>
+            <li>호텔 내에 있는 대형 수영장에는, 가족풀, 유아풀 등 다양한 연령대의 고객층이 즐길 수 있으며,<br>
+                실외로 연결되는 연결통로를 나가면 실외에는 파도풀,수영장 액티비티 등이 준비되어있습니다. </li>
+        </ul>
+        <br>
+        <hr><br>
+        <li>등급별 혜택</li>
+        <dd style="color: red; font-size: 120%;">저희 호텔은 재 방문해주시는 고객님들을 위하여 등급 혜택도 진행중입니다.</dd>
+        <p style="color: blue;">고객 등급별 혜택</p>
+        <table style="text-align: center;">
+            <tr>
+                <th style="color: brown;">브론즈</th>
+                <th style="color: gray;">실버</th>
+                <th style="color: rgb(150, 150, 47);">골드</th>
+                <th style="color: blueviolet;">-vip-</th>
+            </tr>
+            <tr>
+                <td>3%할인</td>
+                <td>5%할인</td>
+                <td>10%할인</td>
+                <td>10%할인+숙박시 워터파크 이용권2인용 1매</td>
+            </tr>
+        </table>
+        <dd style="color: red; font-weight: bold;"><small>각 쿠폰은 최초 등급 달성시 1회 지급해드립니다.</small></dd>
+        <br>
+        <li>각 등급별 달성 조건</li>
+        <table>
+            <tr>
+                <th>브론즈</th>
+                <th>실버</th>
+                <th>골드</th>
+                <th>vip</th>
+            </tr>
+            <tr>
+                <td>누적 적립금30,000달성</td>
+                <td>누적 적립금70,000달성</td>
+                <td>누적 적립금150,000달성</td>
+                <td>누적 적립금300,000달성</td>
+            </tr>
+        </table>
+        <p style="color: red; font-weight: bold;">등급 적립금은 누적으로 달성가능하며, 각 적립금은 10,000원부터 사용 가능합니다.
+    </ul>
     </nav>
-    <p id="p3">첫번째 패키지</p>
     <script src="../js/index0728.js"></script>
 </body>
+
 </html>
