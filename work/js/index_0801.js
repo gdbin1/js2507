@@ -63,9 +63,9 @@
 // }
 // document.getElementById("demo").innerHTML = greet("John", 21)
 
-
-let text = "The temperature is " + toCelsius(77) + "Celsius.";
-console.log(text);
-function toCelsius(fahrenheit) {
-    return (5/9) * (fahreenheit-32);
-}
+// 변수로 사용되는 함수
+// let text = "The temperature is " + toCelsius(77) + "Celsius.";
+// console.log(text);
+// function toCelsius(fahrenheit) {
+//     return (5 / 9) * (fahrenheit - 32);
+// }
