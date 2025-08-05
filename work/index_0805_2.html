@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짜바 이벤ㅂ트 리스너</title>
+    <style>
+        #myDIV {
+            background-color: aqua;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        #myDiv1,
+        #myDiv2 {
+            background-color: blueviolet;
+            padding: 50px;
+        }
+
+        #myP1,
+        #myP2 {
+            background-color: white;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>클릭하면 시간보여줌</h2>
+    <button id="myBtn">시간보기</button>
+    <p id="result"></p>
+    <hr>
+
+    <h2>여러가지 제스처 이벤트</h2>
+    <button id="myBtn2">여러 이벤트</button>
+    <p id="result2"></p>
+    <hr>
+
+    <h2>자바 이벤트 리스너</h2>
+    <p>매개 변수값 전달 하는 방법</p>
+    <p>아래 클릭</p>
+    <button id="Btn">클릭</button>
+    <p id="result3"></p>
+    <hr>
+
+    <h2>자바 remove 이벤트</h2>
+    <div id="myDIV">
+        <p>여기서 움직이면 랜덤한 숫자 나옴</p>
+        <p>버튼 클릭하면 멈춤</p>
+        <button onclick="removeHandler()" id="myBtn3">리무브</button>
+        <p id="result4"></p>
+    </div>
+    <hr>
+
+    <h2>화면 리사이징에 따라 랜덤한 숫자 나오게 하기</h2>
+    <p id="result5"></p>
+    <hr>
+
+    <div id="myDiv1">
+        <h2>버블링:</h2>
+        <p id="myP1">클릭!</p>
+    </div><br>
+    <div id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="myP2">여기 클릮!</p>
+    </div>
+    <script src="./js/index_0805_2.js"></script>
+</body>
+
+</html>

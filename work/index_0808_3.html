@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바 노드</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">첫번째 p태그</p>
+        <p id="p2">두번째</p>
+    </div>
+    <a href="./index_0805_4.html">노드 이어서</a>
+    <script>
+        // Node: 엘리먼트 생성
+        const myP = document.createElement("p");
+        // id추가
+        myP.id = "myID"
+        // 클래스 추가
+        myP.classList.add("cls")
+        // TextNode 생성
+        const mytxt = document.createTextNode("세번째")
+        // 엘리먼트에 자식추가(textnode)
+        myP.appendChild(mytxt)
+        // div1의 자식으로 추가
+        let div1 = document.getElementById("div1");
+        div1.appendChild(myP)
+
+    </script>
+    <script src="./js/index_0805_3.js"></script>
+</body>
+
+</html>
