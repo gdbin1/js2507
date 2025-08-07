@@ -1,59 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가빈 js과제</title>
-        <style>
-        table,tr,td {border: 1px solid purple;
-        border-radius: 50px;
-    border-collapse: collapse ;
-margin: auto;}
+    <!-- 구글 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+And+White+Picture&family=Gaegu&family=Gugi&family=Hi+Melody&family=Playwrite+AU+QLD:wght@100..400&family=Single+Day&display=swap"
+        rel="stylesheet">
+    <!-- css링크 -->
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body {
+            background-image: url("./background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: grab;
+        }
+
+        table,
+        tr,
+        td {
+            border: 5px solid navy;
+            border-radius: 30px;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            margin-left: 0px auto;
+            border-collapse: separate
+        }
+
+
+        .nanum-pen-script-korean {
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 150%;
+        }
+
+        td {
+            border: 3px solid rgb(194, 169, 31);
+            /* cursor: grab;} */
+        }
+
+        a {
+            cursor: grabbing;
+        }
+
+        nav a {
+
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            padding: 0.4rem 0;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff7a18;
+        }
+
+        nav:has(a:hover) a:not(:hover) {
+            opacity: 0.3;
+        }
+
+        .gaegu-korean {
+            font-family: "Gaegu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .single-day-english {
+            font-family: "Single Day", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
-<body>
-     <h1 style="text-align: center;">JS 과제방</h1>
-     <table>
-        <tr>
-            <th>일자</th>
-            <th>링크</th>
-        </tr>
-        <tr>
-            <td>day01_0724</td>
-            <td><a href="./work/index_0724.html">0724</a></td>
-        </tr>
-        <tr>
-            <td>day02_0725</td>
-            <td><a href="./work/index_0725.html">0725</a></td>
-        </tr>
-        <tr>
-            <td>day03_0728</td>
-            <td><a href="./work/index_0728.html">0728</a></td>
-        </tr>
-        <tr>
-            <td>day04_0729</td>
-            <td><a href="./work/index_0729.html">0729</a></td>
-        </tr>
-        <tr>
-            <td>day05_0730</td>
-            <td><a href="./work/index_0730.html">0730</a></td>
-        </tr>
-        <tr>
-            <td>day06_0731</td>
-            <td><a href="./work/index_0731.html">0731(조퇴)</a></td>
-        </tr>
-        <tr>
-            <td>day07_0801</td>
-            <td><a href="./work/index_0801.html">0801</a></td>
-        </tr>
-        <tr>
-            <td>day08_0804</td>
-            <td><a href="./work/index_0804.html">0804</a></td>
-        </tr>
-        <tr>
-            <td>day09_0805</td>
-            <td><a href="./work/index_0805.html">0805</a></td>
-        </tr>
-      </table>
+
+<body class="gaegu-korean single-day-english">
+    <h1 style="text-align: center; color: white; font-size: 300%;">JS 과제방</h1>
+    <div style="display: flex; justify-content: flex-start; gap: 20px;">
+        <table>
+            <tr>
+                <th>일자</th>
+                <th>링크</th>
+            </tr>
+            <tr>
+                <td colspan="2">day01_0724<a href="./work/index_0724.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day02_0725<a href="./work/index_0725.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day03_0728<a href="./work/index_0728.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day04_0729<a href="./work/index_0729.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day05_0730<a href="./work/index_0730.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day06_0731<a href="./work/index_0731.html">[과제 클릭]</a></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>일자</th>
+                <th>링크</th>
+            </tr>
+            <tr>
+                <td colspan="2">day07_0801<a href="./work/index_0801.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day08_0804<a href="./work/index_0804.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day09_0805<a href="./work/index_0805.html">[과제 클릭]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2">day10_0807<a href="./work/index_0807.html">[과제 클릭]</a></td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>
