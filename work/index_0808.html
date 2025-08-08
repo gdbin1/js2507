@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가빈 0808 과제</title>
+</head>
+
+<body>
+    <script>
+        // 생성
+        class Self {
+            constructor(study) {
+                this.study = study;
+            }
+            // 메소드
+            today() {
+                return `${this.study}`
+            }
+        }
+        const sleep1 = new Self("오")
+        const sleep2 = new Self("늘")
+        const sleep3 = new Self("배")
+        const sleep4 = new Self("운")
+        const sleep5 = new Self("거")
+        const sleep6 = new Self("복")
+        const sleep7 = new Self("습")
+        const sleep8 = new Self("과")
+        const sleep9 = new Self("제")
+
+        const gohome1 = sleep1.today()
+        const gohome2 = sleep2.today()
+        const gohome3 = sleep3.today()
+        const gohome4 = sleep4.today()
+        const gohome5 = sleep5.today()
+        const gohome6 = sleep6.today()
+        const gohome7 = sleep7.today()
+        const gohome8 = sleep8.today()
+        const gohome9 = sleep9.today()
+        document.writeln(gohome1 + gohome2 + " " + gohome3 + gohome4 + gohome5 + " " + gohome6 +
+            gohome7 + " " + gohome8 + gohome9 + "<hr>"
+        )
+
+        class Next {
+            constructor(name) {
+                this.week = name
+            }
+            present() {
+                return `${this.week}`
+            }
+        }
+        class Day extends Next {
+            constructor(name, mod) {
+                super(name)
+                this.model = mod
+            }
+            show() {
+                return `${this.present()} ${this.model}`
+            }
+        }
+
+        const nextWeek1 = new Day("다음", "주는")
+        const nextWeek2 = new Day("주", "4일")
+        const nextWeek3 = new Day("하는", "날")
+
+        document.writeln("기쁜 소식: " + nextWeek1.show() + " " + nextWeek2.show() + nextWeek3.show())
+    </script>
